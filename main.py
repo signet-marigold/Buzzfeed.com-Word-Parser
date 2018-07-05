@@ -2,8 +2,8 @@
 # Website: https://www.anhack.xyz
 # Date: July 5, 2018
 #
-# Purpose: Figures out how commonly words appear
-# in buzzfeed articles; to see if there is a trend
+# Purpose: Parses through buzzfeed articles
+# and finds the most commonly used words
 
 
 from collections import Counter
