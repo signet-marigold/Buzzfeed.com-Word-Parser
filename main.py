@@ -53,17 +53,18 @@ def find_articles():
 
     return articles
 
+
 pool = []
 
 # Get text from homepage
-# And add it to the text pool
+# And add it to the word pool
 pool += parse_article(target)
 # Find articles that are linked on the homepage
 articles = find_articles()
 
 # Populate word pool
 for page_url in articles:
-    pool += parse_article(target[:-1] + page_url)
+    pool += parse_article(target.rstrip('/') + page_url)
 
 # Clean up and print results
 for word in Counter(pool).most_common(words_printed):
