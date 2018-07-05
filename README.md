@@ -3,4 +3,5 @@ Scrapes buzzfeed.com for words used in their articles and then sorts those words
 
 
 Python2
+
 Requires BeautifulSoup https://www.crummy.com/software/BeautifulSoup/
